@@ -4,13 +4,13 @@ public class Item {
     private static int nextID = 0;
     private double buyingPrice;
     private double sellingPrice;
-    private int quantity;
 
-    public Item(String itemName, int quantity) {
+
+    public Item(String itemName) {
         nextID++;
         this.itemName = itemName;
         this.itemID = nextID;
-        this.quantity = quantity;
+
     }
 
     public String getItemName() {
@@ -42,11 +42,4 @@ public class Item {
         this.sellingPrice = sellingPrice;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
 }

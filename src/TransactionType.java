@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public enum TransactionType {
+public enum TransactionType {
+    BUYING,
+    SELLING
 }
